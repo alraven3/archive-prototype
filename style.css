@@ -1,0 +1,170 @@
+/* Déclaration des polices */
+@font-face {
+    font-family: 'title_font';
+    src: url('fonts/Dunbar_Low-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'text_font';
+    src: url('fonts/Georama-VariableFont_wdthwght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'text_font', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: #00B08B;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* espace entre le logo et le titre */
+    padding: 1rem;
+    justify-content: center;
+    background: #00B08B;
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'title_font';
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    color: #005B52;
+    margin-bottom: 1.8rem;
+    font-size: 30px;
+}
+
+main {
+    padding: 2rem;
+    margin-left: clamp(140px, 10vw, 300px);
+    margin-right: clamp(190px, 10vw, 300px);
+    max-width: calc(100% - 140px);
+    box-sizing: border-box;
+}
+
+footer {
+    background: #00B08B;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: white;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+ol {
+    margin-left: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+details {
+    margin-bottom: 1.5rem;
+}
+summary {
+    font-family: 'title_font';
+    color: #005B52;
+    font-size: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00B08B;
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo-container {
+    text-align: center;
+    /* margin-bottom: 1.5rem; */
+}
+
+.logo {
+    max-width: 500px; /* Ajustez selon la taille de votre logo */
+    height: auto;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.small_logo {
+    max-width: 100px; /* Ajustez selon la taille de votre logo */
+    height: auto;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.sidenav {
+  width: 130px;
+  position:fixed;
+  z-index: 1;
+  top: 200px;
+  right: 50px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
